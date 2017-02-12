@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var a = 199;    // number to be checked
+            var i = 2;
+
+            if (isPrime(a)) {
+                console.log(a+' is a prime!!');
+            }
+            else {
+                console.log(a+' is not a prime...');
+            }
+
+            function isPrime(a) {
+                var prime = true;
+                while (i ** 2 <= a) {
+                    if (a % i ==0) {
+                        prime = false;
+                        break;
+                    }
+                    i++;
+                }
+                return prime;
+            }
+
+        </script>
+    </body>
+</html>
