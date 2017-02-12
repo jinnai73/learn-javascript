@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var a = 100;    // number to be checked
+            var min = 1;
+            var max = a;
+            
+            console.log(a, '=', squareRoot(a), '^2');
+
+            function squareRoot(i) {
+                while ((max - min) > 0.000000000000002) {
+                    j = (min + max) / 2;
+                    if (j ** 2 > i) {
+                        max = j;
+                    }
+                    else {
+                        min = j;
+                    }
+                }
+                return ((min + max) / 2);
+            }
+        </script>
+    </body>
+</html>
