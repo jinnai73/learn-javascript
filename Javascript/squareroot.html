@@ -5,8 +5,13 @@
     <body>
         <script>
             var a = 123;    // number to be checked
-            var min = 0;
-            var max = a;
+            if (a > 1) {
+                var max = a;
+                var min = 1;
+            } else {
+                var max = 1;
+                var min = a;
+            }
 
             console.log(a + '=' + squareRoot(a) + '^2');
 
