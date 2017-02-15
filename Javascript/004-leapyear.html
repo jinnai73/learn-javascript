@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var year = 2017;    // Year to check
+
+            if (isLeap(year)) {
+                console.log(year + '年はうるう年です');
+            } else {
+                console.log(year + '年はうるう年ではありません');
+            }
+
+            function isLeap(i) {
+                var i4 = i % 4;
+                var i100 = i % 100;
+                var i400 = i % 400;
+                var leap;
+
+                if (i400 == 0 || (i4 == 0 && i100 !== 0)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+        </script>
+    </body>
+</html>
